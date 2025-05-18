@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,5 +40,7 @@ Route::resource('customers', CustomerController::class);
 
 // Definisikan resource route untuk transaksi
 Route::resource('transactions', TransactionController::class);
+
+Route::resource('categories', CategoryController::class);
 
 require __DIR__.'/auth.php';

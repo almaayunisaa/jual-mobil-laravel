@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="bg-white shadow-sm py-3 px-4 mb-4 border-bottom">
+    <h4 class="m-0 fw-bold">Daftar Produk</h4>
+</div>
 <div class="container">
-    <h1>Daftar Produk</h1>
 
     <!-- Tombol untuk menambahkan produk baru -->
     <a href="{{ route('products.create') }}" class="btn btn-success mb-3">Tambah Produk Baru</a>
